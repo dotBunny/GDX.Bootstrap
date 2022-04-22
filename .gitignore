@@ -1,0 +1,131 @@
+# Unity Content
+Library
+library
+Temp
+temp
+Obj
+obj
+Build
+build
+Builds
+builds
+Assets.index
+Assets.index.meta
+Assets/NetCodeGenerated*
+assets/netcodegenerated*
+BuildReports*
+buildreports*
+ExportedObj
+UserSettings
+usersettings
+MemoryCaptures
+memorycaptures
+Logs
+logs
+**/Assets/AssetStoreTools
+**/assets/assetstoretools
+**/Assets/Plugins/PlasticSCM*
+**/assets/plugins/PlasticSCM*
+**/Assets/AddressableAssetsData/*/*.bin*
+**/assets/addressableassetsdata/*/*.bin*
+**/Assets/StreamingAssets/aa.meta
+**/assets/streamingassets/*/aa/*
+.collabignore
+SceneDependencyCache*
+scenedependencycache*
+scenedependencycache.meta
+PerformanceTestRunInfo.*
+performancetestruninfo.*
+.collab*
+.collabignore
+
+# IDE Related
+.vs
+*.code-workspace
+.vscode
+.vsconfig
+.idea
+.gradle
+.consulo
+
+# Config Files
+/ignore.conf
+k9config.txt
+
+# Files
+*.private
+*.private.meta
+^*.private.[0-9]+$
+^*.private.[0-9]+.meta$
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+*.pidb.meta
+*.pdb.meta
+*.mdb.meta
+*.apk
+*.unitypackage
+build.log
+crashlytics-build.properties
+
+# Platform Files
+.DS_Store*
+Thumbs.db
+Desktop.ini
+
+# Media Backups
+*.blend1
+*.blend1.meta
+
+# Generated Content
+sysinfo.txt
+#*/Generated/Build/BuildInfo.cs
+
+# Bolt
+**/Bolt.Generated/VisualScripting.Flow/UnitOptions.db
+**/Bolt.Generated/VisualScripting.Flow/UnitOptions.db.meta
+**/Bolt.Generated/VisualScripting.Core/Property Providers
+**/Bolt.Generated/VisualScripting.Core/Property Providers.meta
+**/Unity.VisualScripting.Generated
+
+# Deployment
+Staging
+staging
+ThirdParty/Steamworks/sdk*
+ThirdParty/Steamworks/output*
+
+
+# Package GIT Repos
+/Projects/GDX_Development/Packages/com.dotbunny.*
+/Projects/GDX_Entities/Packages/com.dotbunny.*
+/Projects/Dox/*
+
+# Project Specifics
+/Projects/DocFxNestedNamespaces/bin
+/Projects/Dox/bin
+/Projects/XmlDocForBolt/bin
+
+/Projects/GDX_Development/bin
+/Projects/GDX_Development/.editorconfig
+/Projects/GDX_Development/CodeCoverage
+/Projects/GDX_Development/GDX
+
+/Projects/GDX_Entities/bin
+/Projects/GDX_Entities/.editorconfig
+/Projects/GDX_Entities/CodeCoverage
+/Projects/GDX_Entities/GDX
+
+# GDX Related
+**/GDX_Automation
+**/GDX_Cache
