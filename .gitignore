@@ -109,7 +109,7 @@ ThirdParty/Steamworks/output*
 # Package GIT Repos
 /Projects/GDX_Development/Packages/com.dotbunny.*
 /Projects/GDX_Entities/Packages/com.dotbunny.*
-/Projects/Dox/*
+/Projects/Dox
 
 # Project Specifics
 /Projects/DocFxNestedNamespaces/bin
