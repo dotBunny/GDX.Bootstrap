@@ -24,4 +24,4 @@ namespace BVT
         }
     }
 }
-#endif // !UNITY_DOTSRUNTIME
+#endif

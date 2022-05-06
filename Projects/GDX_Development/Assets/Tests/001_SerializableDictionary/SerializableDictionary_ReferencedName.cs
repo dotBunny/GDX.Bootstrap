@@ -18,7 +18,7 @@ namespace BVT
             bool correctName = false;
             if (found)
             {
-                correctName = (foundObject.name == "ReferencedName");
+                correctName = foundObject.name == "ReferencedName";
 
             }
             return GDX.Developer.Reports.BuildVerificationReport.Assert(GetIdentifier(),
@@ -31,4 +31,4 @@ namespace BVT
         }
     }
 }
-#endif // !UNITY_DOTSRUNTIME
+#endif

@@ -46,6 +46,7 @@ namespace Dev.Editor
         }
 
         [MenuItem("Tools/GDX/INTERNAL/Build/Classic - OSX - IL2CPP", false)]
+        // ReSharper disable once IdentifierTypo
         public static void BuildClassicOSXIL2CPP()
         {
             ClassicBuildPlayer(
@@ -54,8 +55,6 @@ namespace Dev.Editor
                 BuildTargetGroup.Standalone,
                 ScriptingImplementation.IL2CPP);
         }
-
-
 
         static void ClassicBuildPlayer(string executableName, BuildTarget buildTarget, BuildTargetGroup buildTargetGroup,
             ScriptingImplementation scriptingImplementation)

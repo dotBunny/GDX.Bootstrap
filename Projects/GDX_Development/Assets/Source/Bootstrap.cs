@@ -1,11 +1,9 @@
 
 using System;
 using System.IO;
-using System.Threading.Tasks;
 using GDX;
 using GDX.Developer.Reports.BuildVerification;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 namespace Dev
 {
