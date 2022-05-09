@@ -6,6 +6,7 @@ using UnityEngine;
 
 namespace BVT
 {
+#pragma warning disable once IDE1006
     // ReSharper disable once InconsistentNaming
     public class SerializableDictionary_ReferencedName : GDX.Developer.Reports.BuildVerification.SimpleTestBehaviour
     {

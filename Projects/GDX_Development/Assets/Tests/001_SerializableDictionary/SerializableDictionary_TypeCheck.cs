@@ -6,6 +6,7 @@ using UnityEngine;
 
 namespace BVT
 {
+#pragma warning disable once IDE1006
     // ReSharper disable once InconsistentNaming
     public class SerializableDictionary_TypeCheck : GDX.Developer.Reports.BuildVerification.SimpleTestBehaviour
     {
@@ -14,6 +15,7 @@ namespace BVT
             public bool Hello;
             public bool Jello;
         }
+
         public GameObject CameraObject;
         public GameObject ColliderObject;
         public GameObject ContentObject;

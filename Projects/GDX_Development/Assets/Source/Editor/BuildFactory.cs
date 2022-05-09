@@ -4,6 +4,7 @@ using System.IO;
 using UnityEditor;
 using UnityEngine;
 
+#pragma warning disable IDE1006
 // ReSharper disable InconsistentNaming
 
 namespace Dev.Editor

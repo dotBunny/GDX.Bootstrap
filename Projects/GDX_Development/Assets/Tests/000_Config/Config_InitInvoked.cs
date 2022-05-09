@@ -4,6 +4,7 @@ using GDX.Developer.Reports.NUnit;
 
 namespace BVT
 {
+#pragma warning disable once IDE1006
     // ReSharper disable once InconsistentNaming
     public class Config_InitInvoked : GDX.Developer.Reports.BuildVerification.SimpleTestBehaviour
     {
