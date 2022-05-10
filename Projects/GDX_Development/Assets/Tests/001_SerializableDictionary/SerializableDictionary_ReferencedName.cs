@@ -6,9 +6,10 @@ using UnityEngine;
 
 namespace BVT
 {
-#pragma warning disable once IDE1006
+#pragma warning disable IDE1006
     // ReSharper disable once InconsistentNaming
     public class SerializableDictionary_ReferencedName : GDX.Developer.Reports.BuildVerification.SimpleTestBehaviour
+#pragma warning restore IDE1006
     {
         public GameObject KeyObject;
         public SerializableDictionary<GameObject, GameObject> GameObjectToGameObject = new SerializableDictionary<GameObject, GameObject>();
