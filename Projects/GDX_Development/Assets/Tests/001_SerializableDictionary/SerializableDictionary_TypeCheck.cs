@@ -24,7 +24,7 @@ namespace BVT
                     foundUnityObjectNull = true;
                 }
             }
-            
+
             return GDX.Developer.Reports.BuildVerificationReport.Assert(GetIdentifier(),
                 !foundUnityObjectNull, "Expected no null references.");
         }
