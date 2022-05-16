@@ -250,44 +250,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d30230dcc8e6b684a98c317504380e29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CameraObject: {fileID: 1583032730}
-  ColliderObject: {fileID: 282996288}
-  ContentObject: {fileID: 2037515055}
-  CubeObject: {fileID: 1671367759}
-  TestStructToInt:
+  ObjectToObject:
     m_IsSerializable: 1
-    m_SerializedLength: 0
-    m_SerializedValues: 
-  IntToTestStruct:
-    m_IsSerializable: 1
-    m_SerializedLength: 0
-    m_SerializedKeys: 
-  IntegerToGameObject:
-    m_IsSerializable: 1
-    m_SerializedLength: 3
-    m_SerializedKeys: 000000000100000002000000
-    m_SerializedValues:
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-  GameObjectToInteger:
-    m_IsSerializable: 1
-    m_SerializedLength: 1
+    m_SerializedLength: 4
     m_SerializedKeys:
-    - {fileID: 1583032730}
-    m_SerializedValues: 00000000
-  StringToGameObject:
-    m_IsSerializable: 1
-    m_SerializedLength: 1
-    m_SerializedKeys:
-    - sdsd
+    - {fileID: 1197065475}
+    - {fileID: 1583032732}
+    - {fileID: 1583032731}
+    - {fileID: 282996291}
     m_SerializedValues:
-    - {fileID: 0}
-  GameObjectToString:
-    m_IsSerializable: 1
-    m_SerializedLength: 0
-    m_SerializedKeys: []
-    m_SerializedValues: []
+    - {fileID: 1197065477}
+    - {fileID: 1124283650}
+    - {fileID: 1762049437}
+    - {fileID: 1801321142}
 --- !u!4 &404978277
 Transform:
   m_ObjectHideFlags: 0
