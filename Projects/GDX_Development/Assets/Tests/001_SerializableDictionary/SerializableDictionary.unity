@@ -123,6 +123,57 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &102769220
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 102769222}
+  - component: {fileID: 102769221}
+  m_Layer: 0
+  m_Name: SerializableDictionary_ValueToUnityObjects
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &102769221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 102769220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13f977a7a4a033e4a9f8905d9dc9a3f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IntegerToCapsule:
+    m_IsSerializable: 1
+    m_SerializedLength: 2
+    m_SerializedKeys: 0200000003000000
+    m_SerializedValues:
+    - {fileID: 282996289}
+    - {fileID: 1197065475}
+--- !u!4 &102769222
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 102769220}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &282996288
 GameObject:
   m_ObjectHideFlags: 0
@@ -570,6 +621,13 @@ MonoBehaviour:
     m_SerializedKeys:
     - {fileID: 282996289}
     m_SerializedValues: 2a000000
+  IntegerToCapsule:
+    m_IsSerializable: 1
+    m_SerializedLength: 2
+    m_SerializedKeys: 0100000002000000
+    m_SerializedValues:
+    - {fileID: 282996289}
+    - {fileID: 1197065475}
 --- !u!1 &1583032730
 GameObject:
   m_ObjectHideFlags: 0
@@ -1039,5 +1097,5 @@ Transform:
   - {fileID: 1124283651}
   - {fileID: 1801321142}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
