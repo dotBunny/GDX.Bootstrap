@@ -2,6 +2,7 @@
 using System;
 using System.IO;
 using GDX;
+using GDX.Developer;
 using GDX.Developer.Reports.BuildVerification;
 using UnityEngine;
 
@@ -47,6 +48,9 @@ namespace Dev
                 {
                     Debug.LogError($"[BOOTSTRAP] Unable to write file to {outputPath}.");
                 }
+
+                // Wait two seconds for those times that we go way to fast
+                await new WaitForMilliseconds(WaitForMilliseconds.TwoSeconds).WaitAsync();
 
                 #if UNITY_EDITOR
                 UnityEditor.EditorApplication.isPlaying = false;
