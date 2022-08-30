@@ -2,10 +2,10 @@
 using System;
 using System.IO;
 using GDX;
-#if !UNITY_EDITOR
-using GDX.Developer;
-#endif
 using GDX.Developer.Reports.BuildVerification;
+#if !UNITY_EDITOR
+using GDX.Threading;
+#endif
 using UnityEngine;
 
 namespace Dev
@@ -55,8 +55,7 @@ namespace Dev
                 UnityEditor.EditorApplication.isPlaying = false;
 #else
                 // Wait two seconds for those times that we go way to fast
-                await new WaitForMilliseconds(WaitForMilliseconds.TwoSeconds).WaitAsync();
-
+                await WaitFor.GetTask(WaitFor.TwoSeconds);
                 Application.Quit();
 #endif
             }
