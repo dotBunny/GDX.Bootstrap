@@ -16,7 +16,9 @@ namespace Dev.Editor
 
         static readonly string k_BuildLocation = Path.Combine(Application.dataPath, "..", "Builds", "TestBuild");
 
+#if GDX_TOOLS
         [MenuItem("Tools/GDX/INTERNAL/Build/Classic - Win64 - Mono", false)]
+#endif
         public static void BuildClassicWin64Mono()
         {
             ClassicBuildPlayer(
@@ -26,7 +28,9 @@ namespace Dev.Editor
                 ScriptingImplementation.Mono2x);
         }
 
+#if GDX_TOOLS
         [MenuItem("Tools/GDX/INTERNAL/Build/Classic - Win64 - IL2CPP", false)]
+#endif
         public static void BuildClassicWin64IL2CPP()
         {
             ClassicBuildPlayer(
@@ -36,7 +40,9 @@ namespace Dev.Editor
                 ScriptingImplementation.IL2CPP);
         }
 
+#if GDX_TOOLS
         [MenuItem("Tools/GDX/INTERNAL/Build/Classic - OSX - Mono", false)]
+#endif
         public static void BuildClassicOSXMono()
         {
             ClassicBuildPlayer(
@@ -46,7 +52,9 @@ namespace Dev.Editor
                 ScriptingImplementation.Mono2x);
         }
 
+#if GDX_TOOLS
         [MenuItem("Tools/GDX/INTERNAL/Build/Classic - OSX - IL2CPP", false)]
+#endif
         // ReSharper disable once IdentifierTypo
         public static void BuildClassicOSXIL2CPP()
         {

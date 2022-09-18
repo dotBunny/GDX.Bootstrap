@@ -836,21 +836,23 @@ PlayerSettings:
   webGLMemoryGeometricGrowthStep: 0.2
   webGLMemoryGeometricGrowthCap: 96
   scriptingDefineSymbols:
-    Android: GDX
-    CloudRendering: GDX
-    GameCoreScarlett: GDX
-    GameCoreXboxOne: GDX
-    Lumin: GDX
-    Nintendo Switch: GDX
-    PS4: GDX
-    PS5: GDX
-    Stadia: GDX
-    Standalone: GDX
-    WebGL: GDX
-    Windows Store Apps: GDX
-    XboxOne: GDX
+    Android: GDX;GDX_TOOLS
+    CloudRendering: GDX;GDX_TOOLS
+    EmbeddedLinux: GDX;GDX_TOOLS
+    GameCoreScarlett: GDX;GDX_TOOLS
+    GameCoreXboxOne: GDX;GDX_TOOLS
+    Lumin: GDX;GDX_TOOLS
+    Nintendo Switch: GDX;GDX_TOOLS
+    PS4: GDX;GDX_TOOLS
+    PS5: GDX;GDX_TOOLS
+    QNX: GDX;GDX_TOOLS
+    Stadia: GDX;GDX_TOOLS
+    Standalone: GDX;GDX_TOOLS
+    WebGL: GDX;GDX_TOOLS
+    Windows Store Apps: GDX;GDX_TOOLS
+    XboxOne: GDX;GDX_TOOLS
     iPhone: GDX
-    tvOS: GDX
+    tvOS: GDX;GDX_TOOLS
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend:
