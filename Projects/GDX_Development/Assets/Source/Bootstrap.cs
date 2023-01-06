@@ -29,8 +29,6 @@ namespace Dev
         async void Start()
         {
 #if !UNITY_EDITOR
-            Debug.Log("[BOOTSTRAP] Waiting a second for the jello to settle ...");
-            await WaitFor.GetTask(WaitFor.OneSecond);
             Debug.Log("[BOOTSTRAP] Starting test run ...");
 #endif
 
@@ -65,9 +63,6 @@ namespace Dev
 #if UNITY_EDITOR
                 UnityEditor.EditorApplication.isPlaying = false;
 #else
-                // Wait one second for those times that we go way to fast
-                Debug.Log("[BOOTSTRAP] Waiting a second before quitting ...");
-                await WaitFor.GetTask(WaitFor.OneSecond);
                 Application.Quit();
 #endif
             }
