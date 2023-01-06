@@ -65,8 +65,9 @@ namespace Dev
 #if UNITY_EDITOR
                 UnityEditor.EditorApplication.isPlaying = false;
 #else
-                // Wait two seconds for those times that we go way to fast
-                await WaitFor.GetTask(WaitFor.TwoSeconds);
+                // Wait one second for those times that we go way to fast
+                Debug.Log("[BOOTSTRAP] Waiting a second before quitting ...");
+                await WaitFor.GetTask(WaitFor.OneSecond);
                 Application.Quit();
 #endif
             }
