@@ -19,14 +19,19 @@ namespace Dev
             "Assets/Tests/001_SerializableDictionary/SerializableDictionary.unity"
         };
 
+        void Awake()
+        {
+            Debug.Log("[BOOTSTRAP] Awake!");
+        }
+
 #pragma warning disable IDE0051
         // ReSharper disable UnusedMember.Local
         async void Start()
         {
 #if !UNITY_EDITOR
-            Debug.Log($"[BOOTSTRAP] Waiting 2 seconds ...");
-            await WaitFor.GetTask(WaitFor.TwoSeconds);
-            Debug.Log($"[BOOTSTRAP] Started!");
+            Debug.Log("[BOOTSTRAP] Waiting a second for the jello to settle ...");
+            await WaitFor.GetTask(WaitFor.OneSecond);
+            Debug.Log("[BOOTSTRAP] Starting test run ...");
 #endif
 
             try
