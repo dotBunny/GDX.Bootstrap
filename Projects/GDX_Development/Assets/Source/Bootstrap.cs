@@ -29,7 +29,7 @@ namespace Dev
         async void Start()
         {
 #if !UNITY_EDITOR
-            Debug.Log("[BOOTSTRAP] Starting test run ...");
+            Debug.Log($"[BOOTSTRAP] Starting test ({ClassicBuildScenes.Length.ToString()}) run  ...");
 #endif
 
             try
