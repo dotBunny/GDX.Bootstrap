@@ -23,6 +23,12 @@ namespace Dev
         // ReSharper disable UnusedMember.Local
         async void Start()
         {
+#if !UNITY_EDITOR
+            Debug.Log($"[BOOTSTRAP] Waiting 2 seconds ...");
+            await WaitFor.GetTask(WaitFor.TwoSeconds);
+            Debug.Log($"[BOOTSTRAP] Started!");
+#endif
+
             try
             {
                 for (int testSceneIndex = 1; testSceneIndex < ClassicBuildScenes.Length; testSceneIndex++)
