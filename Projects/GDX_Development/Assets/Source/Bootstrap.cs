@@ -8,6 +8,7 @@ using GDX.Developer.Reports.BuildVerification;
 using GDX.Threading;
 #endif
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Dev
 {
@@ -37,7 +38,8 @@ namespace Dev
             {
                 for (int testSceneIndex = 1; testSceneIndex < testCount; testSceneIndex++)
                 {
-                    await TestRunner.EvaluateTestScene(ClassicBuildScenes[testSceneIndex]);
+                    await TestRunner.EvaluateTestScene(
+                        SceneUtility.GetBuildIndexByScenePath(ClassicBuildScenes[testSceneIndex]));
                 }
             }
             catch (Exception e)
