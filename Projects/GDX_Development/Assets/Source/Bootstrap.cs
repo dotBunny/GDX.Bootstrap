@@ -1,6 +1,7 @@
 
 using System;
 using System.IO;
+using System.Threading.Tasks;
 using GDX;
 using GDX.Developer.Reports.BuildVerification;
 #if !UNITY_EDITOR
@@ -28,13 +29,13 @@ namespace Dev
         // ReSharper disable UnusedMember.Local
         async void Start()
         {
+            int testCount = ClassicBuildScenes.Length;
 #if !UNITY_EDITOR
-            Debug.Log($"[BOOTSTRAP] Starting test ({ClassicBuildScenes.Length.ToString()}) run  ...");
+            Debug.Log($"[BOOTSTRAP] Starting test ({testCount.ToString()}) run  ...");
 #endif
-
             try
             {
-                for (int testSceneIndex = 1; testSceneIndex < ClassicBuildScenes.Length; testSceneIndex++)
+                for (int testSceneIndex = 1; testSceneIndex < testCount; testSceneIndex++)
                 {
                     await TestRunner.EvaluateTestScene(ClassicBuildScenes[testSceneIndex]);
                 }
