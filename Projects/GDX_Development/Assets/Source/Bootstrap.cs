@@ -4,6 +4,7 @@ using System.IO;
 using System.Threading.Tasks;
 using GDX;
 using GDX.Developer.Reports.BuildVerification;
+using GDX.Developer.Reports.NUnit;
 #if !UNITY_EDITOR
 using GDX.Threading;
 #endif
@@ -36,10 +37,14 @@ namespace Dev
 #endif
             try
             {
+                // Build out scene definitions
+                TestScene[] scenes = new TestScene[testCount-1];
                 for (int testSceneIndex = 1; testSceneIndex < testCount; testSceneIndex++)
                 {
-                    await TestRunner.EvaluateTestScene(SceneUtility.GetBuildIndexByScenePath(ClassicBuildScenes[testSceneIndex]));
+                    scenes[testSceneIndex-1] = new TestScene(testSceneIndex);
                 }
+
+                await TestRunner.AsTask(scenes);
             }
             catch (Exception e)
             {
