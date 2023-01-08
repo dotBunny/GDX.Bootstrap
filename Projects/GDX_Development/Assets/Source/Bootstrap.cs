@@ -43,6 +43,7 @@ namespace Dev
             }
             catch (Exception e)
             {
+                Debug.LogException(e);
                 GDX.Developer.Reports.BuildVerificationReport.Panic($"EXCEPTION: {e.Message}.\n{e.StackTrace}");
             }
             finally
