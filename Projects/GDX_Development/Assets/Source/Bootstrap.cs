@@ -31,10 +31,10 @@ namespace Dev
             try
             {
                 // Build out scene definitions
-                TestScene[] scenes = new TestScene[testCount-1];
+                TestScene[] scenes = new TestScene[testCount];
                 for (int testSceneIndex = 1; testSceneIndex < testCount; testSceneIndex++)
                 {
-                    scenes[testSceneIndex-1] = new TestScene(testSceneIndex);
+                    scenes[testSceneIndex] = new TestScene(testSceneIndex);
                 }
 
                 await TestRunner.Execute(scenes);
