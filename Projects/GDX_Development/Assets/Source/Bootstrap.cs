@@ -38,9 +38,7 @@ namespace Dev
             {
                 for (int testSceneIndex = 1; testSceneIndex < testCount; testSceneIndex++)
                 {
-                    await TestRunner.EvaluateTestScene(
-                        SceneUtility.GetBuildIndexByScenePath(ClassicBuildScenes[testSceneIndex]))
-                        .ConfigureAwait(true);
+                    await TestRunner.EvaluateTestScene(SceneUtility.GetBuildIndexByScenePath(ClassicBuildScenes[testSceneIndex]));
                 }
             }
             catch (Exception e)
