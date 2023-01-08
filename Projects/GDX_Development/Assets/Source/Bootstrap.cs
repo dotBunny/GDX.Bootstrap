@@ -1,15 +1,8 @@
-
 using System;
 using System.IO;
-using System.Threading.Tasks;
 using GDX;
 using GDX.Developer.Reports.BuildVerification;
-using GDX.Developer.Reports.NUnit;
-#if !UNITY_EDITOR
-using GDX.Threading;
-#endif
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 namespace Dev
 {
@@ -44,11 +37,10 @@ namespace Dev
                     scenes[testSceneIndex-1] = new TestScene(testSceneIndex);
                 }
 
-                await TestRunner.AsTask(scenes);
+                await TestRunner.Execute(scenes);
             }
             catch (Exception e)
             {
-                Debug.LogException(e);
                 GDX.Developer.Reports.BuildVerificationReport.Panic($"EXCEPTION: {e.Message}.\n{e.StackTrace}");
             }
             finally
