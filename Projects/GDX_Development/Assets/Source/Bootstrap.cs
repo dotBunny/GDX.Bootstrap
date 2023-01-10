@@ -8,7 +8,7 @@ namespace Dev
 {
     public class Bootstrap : MonoBehaviour
     {
-        int m_frameWait = 50;
+        float m_runtimeSettleTimer = 5f;
 
         public static readonly string[] ClassicBuildScenes =
         {
@@ -19,23 +19,29 @@ namespace Dev
 
         void Awake()
         {
-            Debug.Log("[BOOTSTRAP] Awake!");
+            Debug.Log($"[BOOTSTRAP] Tests will begin in ~{m_runtimeSettleTimer.ToString()} seconds.");
         }
 
 #pragma warning disable IDE0051
         // ReSharper disable UnusedMember.Local
-        async void Update()
+        void Update()
         {
             // Handle frame delay for things to settle
-            if (m_frameWait > 0)
+            if (m_runtimeSettleTimer > 0)
             {
-                m_frameWait--;
+                m_runtimeSettleTimer -= Time.deltaTime;
                 return;
             }
-            if (m_frameWait < 0) return;
+            
+            // Don't update this script anymore!
+            enabled = false;
+            
+            // Trigger our execution
+            Execute();
+        }
 
-            m_frameWait--;
-
+        async void Execute()
+        {
             GDX.Developer.Reports.BuildVerificationReport.Reset();
 
             int testCount = ClassicBuildScenes.Length;
