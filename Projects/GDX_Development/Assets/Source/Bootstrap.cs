@@ -26,7 +26,6 @@ namespace Dev
         // ReSharper disable UnusedMember.Local
         void Update()
         {
-            Debug.Log($"[BOOTSTRAP] Update Tick ({m_runtimeSettleTimer.ToString()}-{Time.deltaTime.ToString()})");
             // Handle frame delay for things to settle
             if (m_runtimeSettleTimer > 0)
             {
