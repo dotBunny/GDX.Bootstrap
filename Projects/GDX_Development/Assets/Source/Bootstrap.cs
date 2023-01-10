@@ -24,6 +24,8 @@ namespace Dev
         // ReSharper disable UnusedMember.Local
         async void Start()
         {
+            GDX.Developer.Reports.BuildVerificationReport.Reset();
+            
             int testCount = ClassicBuildScenes.Length;
 #if !UNITY_EDITOR
             Debug.Log($"[BOOTSTRAP] Starting test ({testCount.ToString()}) run  ...");
