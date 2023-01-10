@@ -8,6 +8,8 @@ namespace Dev
 {
     public class Bootstrap : MonoBehaviour
     {
+        int m_frameWait = 50;
+
         public static readonly string[] ClassicBuildScenes =
         {
             "Assets/GDX.unity",
@@ -22,10 +24,20 @@ namespace Dev
 
 #pragma warning disable IDE0051
         // ReSharper disable UnusedMember.Local
-        async void Start()
+        async void Update()
         {
+            // Handle frame delay for things to settle
+            if (m_frameWait > 0)
+            {
+                m_frameWait--;
+                return;
+            }
+            if (m_frameWait < 0) return;
+
+            m_frameWait--;
+
             GDX.Developer.Reports.BuildVerificationReport.Reset();
-            
+
             int testCount = ClassicBuildScenes.Length;
 #if !UNITY_EDITOR
             Debug.Log($"[BOOTSTRAP] Starting test ({testCount.ToString()}) run  ...");
