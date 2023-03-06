@@ -9,6 +9,7 @@ namespace Dev
     public class Bootstrap : MonoBehaviour
     {
         float m_runtimeSettleTimer = 5f;
+        bool m_executing;
 
         public static readonly string[] ClassicBuildScenes =
         {
@@ -33,13 +34,12 @@ namespace Dev
                 return;
             }
             
-            Debug.Log($"[BOOTSTRAP] Disable MonoBehaviour");
-            
-            // Don't update this script anymore!
-            enabled = false;
-            
-            // Trigger our execution
-            Execute();
+            if (!m_executing)
+            {
+                Debug.Log($"[BOOTSTRAP] Start Async Execution ...");
+                m_executing = true;
+                Execute();
+            }
         }
 
         async void Execute()
