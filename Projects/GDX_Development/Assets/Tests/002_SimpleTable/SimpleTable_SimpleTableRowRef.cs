@@ -12,7 +12,7 @@ namespace BVT
     public class SimpleTable_SimpleTableRowRef : GDX.Developer.Reports.BuildVerification.SimpleTestBehaviour
 #pragma warning restore IDE1006
     {
-        public SimpleTable.SimpleTableRowRef Reference;
+        public GDX.Data.SimpleTableRowRef Reference;
         
         public override TestCase Check()
         {
