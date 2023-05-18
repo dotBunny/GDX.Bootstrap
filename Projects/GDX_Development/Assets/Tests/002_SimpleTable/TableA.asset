@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   allStringColumns:
   - TArray: []
+  - TArray: []
   allBoolColumns: []
   allCharColumns: []
   allSbyteColumns: []
@@ -45,6 +46,7 @@ MonoBehaviour:
   allColumnNames:
   - TArray:
     - MyColumn
+    - MyColumn
   - TArray: []
   - TArray: []
   - TArray: []
@@ -74,7 +76,7 @@ MonoBehaviour:
   - TArray: []
   - TArray: []
   allColumnOrders:
-  - TArray: 00000000
+  - TArray: 0000000001000000
   - TArray: 
   - TArray: 
   - TArray: 
@@ -107,9 +109,9 @@ MonoBehaviour:
   rowCount: 0
   columnIDToDenseIndexMap:
   - columnType: 0
-    columnDenseIndex: 0
+    columnDenseIndex: 1
   columnDenseIndexToIDMap:
-  - TArray: 00000000
+  - TArray: 0000000000000000
   - TArray: 
   - TArray: 
   - TArray: 
@@ -139,5 +141,5 @@ MonoBehaviour:
   - TArray: 
   - TArray: 
   columnEntriesFreeListHead: 0
-  combinedColumnCount: 1
-  dataVersion: 2
+  combinedColumnCount: 2
+  dataVersion: 3
