@@ -10,10 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6298f01407a94110b6787a48e881837a, type: 3}
-  m_Name: TableA
+  m_Name: StableTableB
   m_EditorClassIdentifier: 
   allStringColumns:
-  - TArray: []
   - TArray: []
   allBoolColumns: []
   allCharColumns: []
@@ -46,7 +45,6 @@ MonoBehaviour:
   allColumnNames:
   - TArray:
     - MyColumn
-    - MyColumn
   - TArray: []
   - TArray: []
   - TArray: []
@@ -76,7 +74,7 @@ MonoBehaviour:
   - TArray: []
   - TArray: []
   allColumnOrders:
-  - TArray: 0000000001000000
+  - TArray: 00000000
   - TArray: 
   - TArray: 
   - TArray: 
@@ -109,9 +107,9 @@ MonoBehaviour:
   rowCount: 0
   columnIDToDenseIndexMap:
   - columnType: 0
-    columnDenseIndex: 1
+    columnDenseIndex: 0
   columnDenseIndexToIDMap:
-  - TArray: 0000000000000000
+  - TArray: 00000000
   - TArray: 
   - TArray: 
   - TArray: 
@@ -141,5 +139,5 @@ MonoBehaviour:
   - TArray: 
   - TArray: 
   columnEntriesFreeListHead: 0
-  combinedColumnCount: 2
-  dataVersion: 3
+  combinedColumnCount: 1
+  dataVersion: 2

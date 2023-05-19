@@ -9,10 +9,10 @@ namespace BVT
 {
 #pragma warning disable IDE1006
     // ReSharper disable once InconsistentNaming
-    public class SimpleTable_SimpleTableRowRef : GDX.Developer.Reports.BuildVerification.SimpleTestBehaviour
+    public class ITable_StableTable_StringCellValue : GDX.Developer.Reports.BuildVerification.SimpleTestBehaviour
 #pragma warning restore IDE1006
     {
-        public GDX.Data.TableRowRef Reference;
+       // public GDX.Data.TableRowRef Reference;
         
         public override TestCase Check()
         {
@@ -31,7 +31,7 @@ namespace BVT
 
         public override string GetIdentifier()
         {
-            return "SimpleTable.TableRowRef";
+            return "ITable.StableTable.StringCellValue";
         }
     }
 }
