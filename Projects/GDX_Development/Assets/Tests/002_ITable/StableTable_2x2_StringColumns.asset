@@ -10,10 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6298f01407a94110b6787a48e881837a, type: 3}
-  m_Name: StableTableB
+  m_Name: StableTable_2x2_StringColumns
   m_EditorClassIdentifier: 
+  m_DisplayName: GDXStableTable
   allStringColumns:
-  - TArray: []
+  - TArray:
+    - A1
+    - A2
+  - TArray:
+    - B1
+    - B2
   allBoolColumns: []
   allCharColumns: []
   allSbyteColumns: []
@@ -42,9 +48,11 @@ MonoBehaviour:
   allGradientColumns: []
   allAnimationCurveColumns: []
   allObjectRefColumns: []
+  allObjectRefTypenames: []
   allColumnNames:
   - TArray:
-    - MyColumn
+    - A
+    - B
   - TArray: []
   - TArray: []
   - TArray: []
@@ -73,43 +81,22 @@ MonoBehaviour:
   - TArray: []
   - TArray: []
   - TArray: []
-  allColumnOrders:
-  - TArray: 00000000
-  - TArray: 
-  - TArray: 
-  - TArray: 
-  - TArray: 
-  - TArray: 
-  - TArray: 
-  - TArray: 
-  - TArray: 
-  - TArray: 
-  - TArray: 
-  - TArray: 
-  - TArray: 
-  - TArray: 
-  - TArray: 
-  - TArray: 
-  - TArray: 
-  - TArray: 
-  - TArray: 
-  - TArray: 
-  - TArray: 
-  - TArray: 
-  - TArray: 
-  - TArray: 
-  - TArray: 
-  - TArray: 
-  - TArray: 
-  - TArray: 
-  - TArray: 
-  allRowNames: []
-  rowCount: 0
+  rowIDToDenseIndexMap: 0000000001000000
+  rowDenseIndexToIDMap: 0000000001000000
+  rowNames:
+  - 1
+  - 2
+  rowEntriesFreeListHead: 2
+  rowCount: 2
   columnIDToDenseIndexMap:
-  - columnType: 0
+  - ColumnType: 0
     columnDenseIndex: 0
+  - ColumnType: 0
+    columnDenseIndex: 1
+  columnIDToSortOrderMap: 0000000001000000
+  sortedOrderToColumnIDMap: 0000000001000000
   columnDenseIndexToIDMap:
-  - TArray: 00000000
+  - TArray: 0000000001000000
   - TArray: 
   - TArray: 
   - TArray: 
@@ -138,6 +125,8 @@ MonoBehaviour:
   - TArray: 
   - TArray: 
   - TArray: 
-  columnEntriesFreeListHead: 0
-  combinedColumnCount: 1
-  dataVersion: 2
+  columnEntriesFreeListHead: 2
+  combinedColumnCount: 2
+  dataVersion: 17
+  m_Flags:
+    Bits0: 0

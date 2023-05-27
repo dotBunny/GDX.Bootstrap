@@ -10,11 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6298f01407a94110b6787a48e881837a, type: 3}
-  m_Name: StableTableA
+  m_Name: StableTable_2x2_BoundsColumns
   m_EditorClassIdentifier: 
-  allStringColumns:
-  - TArray: []
-  - TArray: []
+  m_DisplayName: GDXStableTable
+  allStringColumns: []
   allBoolColumns: []
   allCharColumns: []
   allSbyteColumns: []
@@ -37,81 +36,74 @@ MonoBehaviour:
   allRectIntColumns: []
   allColorColumns: []
   allLayerMaskColumns: []
-  allBoundsColumns: []
+  allBoundsColumns:
+  - TArray:
+    - m_Center: {x: 0, y: 0, z: 0}
+      m_Extent: {x: 0, y: 0, z: 0}
+    - m_Center: {x: 0, y: 0, z: 0}
+      m_Extent: {x: 0, y: 0, z: 0}
+  - TArray:
+    - m_Center: {x: 0, y: 0, z: 0}
+      m_Extent: {x: 0, y: 0, z: 0}
+    - m_Center: {x: 0, y: 0, z: 0}
+      m_Extent: {x: 0, y: 0, z: 0}
   allBoundsIntColumns: []
   allHash128Columns: []
   allGradientColumns: []
   allAnimationCurveColumns: []
   allObjectRefColumns: []
+  allObjectRefTypenames: []
   allColumnNames:
+  - TArray: []
+  - TArray: []
+  - TArray: []
+  - TArray: []
+  - TArray: []
+  - TArray: []
+  - TArray: []
+  - TArray: []
+  - TArray: []
+  - TArray: []
+  - TArray: []
+  - TArray: []
+  - TArray: []
+  - TArray: []
+  - TArray: []
+  - TArray: []
+  - TArray: []
+  - TArray: []
+  - TArray: []
+  - TArray: []
+  - TArray: []
+  - TArray: []
+  - TArray: []
   - TArray:
-    - MyColumn
-    - MyColumn
+    - A
+    - B
   - TArray: []
   - TArray: []
   - TArray: []
   - TArray: []
   - TArray: []
-  - TArray: []
-  - TArray: []
-  - TArray: []
-  - TArray: []
-  - TArray: []
-  - TArray: []
-  - TArray: []
-  - TArray: []
-  - TArray: []
-  - TArray: []
-  - TArray: []
-  - TArray: []
-  - TArray: []
-  - TArray: []
-  - TArray: []
-  - TArray: []
-  - TArray: []
-  - TArray: []
-  - TArray: []
-  - TArray: []
-  - TArray: []
-  - TArray: []
-  - TArray: []
-  allColumnOrders:
-  - TArray: 0000000001000000
-  - TArray: 
-  - TArray: 
-  - TArray: 
-  - TArray: 
-  - TArray: 
-  - TArray: 
-  - TArray: 
-  - TArray: 
-  - TArray: 
-  - TArray: 
-  - TArray: 
-  - TArray: 
-  - TArray: 
-  - TArray: 
-  - TArray: 
-  - TArray: 
-  - TArray: 
-  - TArray: 
-  - TArray: 
-  - TArray: 
-  - TArray: 
-  - TArray: 
-  - TArray: 
-  - TArray: 
-  - TArray: 
-  - TArray: 
-  - TArray: 
-  - TArray: 
-  allRowNames: []
-  rowCount: 0
+  rowIDToDenseIndexMap: 00000000010000000300000004000000
+  rowDenseIndexToIDMap: 0000000001000000
+  rowNames:
+  - 1
+  - 2
+  rowEntriesFreeListHead: 2
+  rowCount: 2
   columnIDToDenseIndexMap:
-  - columnType: 0
+  - ColumnType: 23
     columnDenseIndex: 1
+  - ColumnType: -1
+    columnDenseIndex: 1
+  - ColumnType: -1
+    columnDenseIndex: 2
+  - ColumnType: 23
+    columnDenseIndex: 0
+  columnIDToSortOrderMap: 01000000010000000200000000000000
+  sortedOrderToColumnIDMap: 0300000000000000
   columnDenseIndexToIDMap:
-  - TArray: 0000000000000000
   - TArray: 
   - TArray: 
   - TArray: 
@@ -135,6 +127,7 @@ MonoBehaviour:
   - TArray: 
   - TArray: 
   - TArray: 
+  - TArray: 0300000000000000
   - TArray: 
   - TArray: 
   - TArray: 
@@ -142,4 +135,6 @@ MonoBehaviour:
   - TArray: 
   columnEntriesFreeListHead: 0
   combinedColumnCount: 2
-  dataVersion: 3
+  dataVersion: 39
+  m_Flags:
+    Bits0: 0

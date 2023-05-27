@@ -18,6 +18,9 @@ namespace BVT
         public StringCellValue MyValue;
 
         public StringCellValue MySecondValue;
+        public StringCellValue MyThirdValue;
+
+        public BoundsCellValue MyForthValue;
        // public GDX.Data.TableRowRef Reference;
 
         public override TestCase Check()

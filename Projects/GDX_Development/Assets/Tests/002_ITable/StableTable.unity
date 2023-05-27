@@ -132,7 +132,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 484483604}
-  - component: {fileID: 484483603}
+  - component: {fileID: 484483605}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -140,18 +140,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &484483603
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 484483602}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07da2fd05850cc3409bb33a320a8360a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &484483604
 Transform:
   m_ObjectHideFlags: 0
@@ -167,3 +155,31 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &484483605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 484483602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07da2fd05850cc3409bb33a320a8360a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MyValue:
+    Table: {fileID: 0}
+    Column: 0
+    Row: 0
+  MySecondValue:
+    Table: {fileID: 0}
+    Column: 0
+    Row: 0
+  MyThirdValue:
+    Table: {fileID: 11400000, guid: e5c9d8d4f6139ed4eb3c0b5e4c7335a3, type: 2}
+    Column: 1
+    Row: 0
+  MyForthValue:
+    Table: {fileID: 11400000, guid: 52096c202a8e3674cbb83c5aecc553eb, type: 2}
+    Column: 3
+    Row: 0
