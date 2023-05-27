@@ -1,8 +1,11 @@
 ﻿#if !UNITY_DOTSRUNTIME
 
+using System;
 using GDX;
 using GDX.Collections.Generic;
 using GDX.Developer.Reports.NUnit;
+using GDX.Tables;
+using GDX.Tables.CellValues;
 using UnityEngine;
 
 namespace BVT
@@ -12,8 +15,11 @@ namespace BVT
     public class ITable_StableTable_StringCellValue : GDX.Developer.Reports.BuildVerification.SimpleTestBehaviour
 #pragma warning restore IDE1006
     {
+        public StringCellValue MyValue;
+
+        public StringCellValue MySecondValue;
        // public GDX.Data.TableRowRef Reference;
-        
+
         public override TestCase Check()
         {
             // bool found = GameObjectToGameObject.TryGetValue(KeyObject, out GameObject foundObject);
