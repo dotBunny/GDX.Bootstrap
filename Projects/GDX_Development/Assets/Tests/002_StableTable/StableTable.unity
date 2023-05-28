@@ -167,19 +167,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07da2fd05850cc3409bb33a320a8360a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MyValue:
-    Table: {fileID: 0}
+  First:
+    Table: {fileID: 11400000, guid: e5c9d8d4f6139ed4eb3c0b5e4c7335a3, type: 2}
     Column: 0
     Row: 0
-  MySecondValue:
-    Table: {fileID: 0}
-    Column: 0
-    Row: 0
-  MyThirdValue:
+  Second:
     Table: {fileID: 11400000, guid: e5c9d8d4f6139ed4eb3c0b5e4c7335a3, type: 2}
     Column: 1
-    Row: 0
-  MyForthValue:
-    Table: {fileID: 11400000, guid: 52096c202a8e3674cbb83c5aecc553eb, type: 2}
-    Column: 3
-    Row: 0
+    Row: 1

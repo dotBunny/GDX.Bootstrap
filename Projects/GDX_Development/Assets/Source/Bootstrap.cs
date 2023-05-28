@@ -15,7 +15,8 @@ namespace Dev
         {
             "Assets/GDX.unity",
             "Assets/Tests/000_Config/Config.unity",
-            "Assets/Tests/001_SerializableDictionary/SerializableDictionary.unity"
+            "Assets/Tests/001_SerializableDictionary/SerializableDictionary.unity",
+            "Assets/Tests/002_StableTable/StableTable.unity"
         };
 
         void Awake()
@@ -33,7 +34,7 @@ namespace Dev
                 m_runtimeSettleTimer -= Time.deltaTime;
                 return;
             }
-            
+
             if (!m_executing)
             {
                 Debug.Log($"[BOOTSTRAP] Start Async Execution ...");
