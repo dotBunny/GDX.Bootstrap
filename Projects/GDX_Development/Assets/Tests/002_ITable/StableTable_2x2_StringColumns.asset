@@ -93,7 +93,19 @@ MonoBehaviour:
     columnDenseIndex: 0
   - ColumnType: 0
     columnDenseIndex: 1
-  columnIDToSortOrderMap: 0000000001000000
+  - ColumnType: -1
+    columnDenseIndex: 0
+  - ColumnType: -1
+    columnDenseIndex: 0
+  - ColumnType: -1
+    columnDenseIndex: 0
+  - ColumnType: -1
+    columnDenseIndex: 6
+  - ColumnType: -1
+    columnDenseIndex: 7
+  - ColumnType: -1
+    columnDenseIndex: 8
+  columnIDToSortOrderMap: 0000000001000000020000000200000003000000ffffffffffffffffffffffff
   sortedOrderToColumnIDMap: 0000000001000000
   columnDenseIndexToIDMap:
   - TArray: 0000000001000000
@@ -125,8 +137,8 @@ MonoBehaviour:
   - TArray: 
   - TArray: 
   - TArray: 
-  columnEntriesFreeListHead: 2
+  columnEntriesFreeListHead: 3
   combinedColumnCount: 2
-  dataVersion: 17
+  dataVersion: 25
   m_Flags:
     Bits0: 0
