@@ -12,44 +12,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6298f01407a94110b6787a48e881837a, type: 3}
   m_Name: StableTable_StringCellValue
   m_EditorClassIdentifier: 
-  m_DisplayName: GDXStableTable
-  allStringColumns:
+  DisplayName: GDXStableTable
+  AllStringColumns:
   - TArray:
     - A1
     - A2
   - TArray:
     - B1
     - B2
-  allBoolColumns: []
-  allCharColumns: []
-  allSbyteColumns: []
-  allByteColumns: []
-  allShortColumns: []
-  allUshortColumns: []
-  allIntColumns: []
-  allUintColumns: []
-  allLongColumns: []
-  allUlongColumns: []
-  allFloatColumns: []
-  allDoubleColumns: []
-  allVector2Columns: []
-  allVector3Columns: []
-  allVector4Columns: []
-  allVector2IntColumns: []
-  allVector3IntColumns: []
-  allQuaternionColumns: []
-  allRectColumns: []
-  allRectIntColumns: []
-  allColorColumns: []
-  allLayerMaskColumns: []
-  allBoundsColumns: []
-  allBoundsIntColumns: []
-  allHash128Columns: []
-  allGradientColumns: []
-  allAnimationCurveColumns: []
-  allObjectRefColumns: []
-  allObjectRefTypenames: []
-  allColumnNames:
+  AllBoolColumns: []
+  AllCharColumns: []
+  AllSbyteColumns: []
+  AllByteColumns: []
+  AllShortColumns: []
+  AllUshortColumns: []
+  AllIntColumns: []
+  AllUintColumns: []
+  AllLongColumns: []
+  AllUlongColumns: []
+  AllFloatColumns: []
+  AllDoubleColumns: []
+  AllVector2Columns: []
+  AllVector3Columns: []
+  AllVector4Columns: []
+  AllVector2IntColumns: []
+  AllVector3IntColumns: []
+  AllQuaternionColumns: []
+  AllRectColumns: []
+  AllRectIntColumns: []
+  AllColorColumns: []
+  AllLayerMaskColumns: []
+  AllBoundsColumns: []
+  AllBoundsIntColumns: []
+  AllHash128Columns: []
+  AllGradientColumns: []
+  AllAnimationCurveColumns: []
+  AllObjectRefColumns: []
+  AllObjectRefTypenames: []
+  AllColumnNames:
   - TArray:
     - A
     - B
@@ -81,33 +81,33 @@ MonoBehaviour:
   - TArray: []
   - TArray: []
   - TArray: []
-  rowIDToDenseIndexMap: 0000000001000000
-  rowDenseIndexToIDMap: 0000000001000000
-  rowNames:
+  RowIDToDenseIndexMap: 00000000010000000300000004000000
+  RowDenseIndexToIDMap: 0000000001000000
+  RowNames:
   - 1
   - 2
-  rowEntriesFreeListHead: 2
-  rowCount: 2
-  columnIDToDenseIndexMap:
+  RowEntriesFreeListHead: 2
+  RowCount: 2
+  ColumnIDToDenseIndexMap:
   - ColumnType: 0
-    columnDenseIndex: 0
+    ColumnDenseIndex: 0
   - ColumnType: 0
-    columnDenseIndex: 1
+    ColumnDenseIndex: 1
   - ColumnType: -1
-    columnDenseIndex: 0
+    ColumnDenseIndex: 0
   - ColumnType: -1
-    columnDenseIndex: 0
+    ColumnDenseIndex: 0
   - ColumnType: -1
-    columnDenseIndex: 0
+    ColumnDenseIndex: 0
   - ColumnType: -1
-    columnDenseIndex: 6
+    ColumnDenseIndex: 6
   - ColumnType: -1
-    columnDenseIndex: 7
+    ColumnDenseIndex: 7
   - ColumnType: -1
-    columnDenseIndex: 8
-  columnIDToSortOrderMap: 0000000001000000020000000200000003000000ffffffffffffffffffffffff
-  sortedOrderToColumnIDMap: 0000000001000000
-  columnDenseIndexToIDMap:
+    ColumnDenseIndex: 8
+  ColumnIDToSortOrderMap: 0000000001000000020000000200000003000000ffffffffffffffffffffffff
+  SortedOrderToColumnIDMap: 0000000001000000
+  ColumnDenseIndexToIDMap:
   - TArray: 0000000001000000
   - TArray: 
   - TArray: 
@@ -137,8 +137,8 @@ MonoBehaviour:
   - TArray: 
   - TArray: 
   - TArray: 
-  columnEntriesFreeListHead: 3
-  combinedColumnCount: 2
-  dataVersion: 25
-  m_Flags:
+  ColumnEntriesFreeListHead: 3
+  CombinedColumnCount: 2
+  DataVersion: 27
+  SettingsFlags:
     Bits0: 0
