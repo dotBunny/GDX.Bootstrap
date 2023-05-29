@@ -7,7 +7,7 @@ namespace BVT
 {
 #pragma warning disable IDE1006
     // ReSharper disable once InconsistentNaming
-    public class StableTable_StringCellValue : GDX.Developer.Reports.BuildVerification.SimpleTestBehaviour
+    public class StableTable_StringCellValue_Get : GDX.Developer.Reports.BuildVerification.SimpleTestBehaviour
 #pragma warning restore IDE1006
     {
         public StringCellValue First;
@@ -15,13 +15,15 @@ namespace BVT
 
         public override TestCase Check()
         {
-            return GDX.Developer.Reports.BuildVerificationReport.Assert(GetIdentifier(),
-                First.Get() == "A1" && Second.Get() == "B2", $"Expected A1 ({First.Get()}) and B2 ({Second.Get()}");
+            return GDX.Developer.Reports.BuildVerificationReport.Assert(
+                GetIdentifier(),
+                First.Get() == "A1" && Second.Get() == "B2", 
+                $"Expected A1 ({First.Get()}) and B2 ({Second.Get()})");
         }
 
         public override string GetIdentifier()
         {
-            return "StableTable.StringCellValue";
+            return "StableTable.StringCellValue.Get";
         }
     }
 }
