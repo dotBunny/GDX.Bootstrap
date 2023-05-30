@@ -48,7 +48,7 @@ MonoBehaviour:
   AllGradientColumns: []
   AllAnimationCurveColumns: []
   AllObjectRefColumns: []
-  AllObjectRefTypenames: []
+  AllObjectRefTypeNames: []
   AllColumnNames:
   - TArray:
     - A
@@ -81,7 +81,7 @@ MonoBehaviour:
   - TArray: []
   - TArray: []
   - TArray: []
-  RowIDToDenseIndexMap: 00000000010000000300000004000000
+  RowIDToDenseIndexMap: 0000000001000000
   RowDenseIndexToIDMap: 0000000001000000
   RowNames:
   - 1
@@ -93,19 +93,7 @@ MonoBehaviour:
     ColumnDenseIndex: 0
   - ColumnType: 0
     ColumnDenseIndex: 1
-  - ColumnType: -1
-    ColumnDenseIndex: 0
-  - ColumnType: -1
-    ColumnDenseIndex: 0
-  - ColumnType: -1
-    ColumnDenseIndex: 0
-  - ColumnType: -1
-    ColumnDenseIndex: 6
-  - ColumnType: -1
-    ColumnDenseIndex: 7
-  - ColumnType: -1
-    ColumnDenseIndex: 8
-  ColumnIDToSortOrderMap: 0000000001000000020000000200000003000000ffffffffffffffffffffffff
+  ColumnIDToSortOrderMap: 0000000001000000
   SortedOrderToColumnIDMap: 0000000001000000
   ColumnDenseIndexToIDMap:
   - TArray: 0000000001000000
@@ -137,8 +125,8 @@ MonoBehaviour:
   - TArray: 
   - TArray: 
   - TArray: 
-  ColumnEntriesFreeListHead: 3
+  ColumnEntriesFreeListHead: 2
   CombinedColumnCount: 2
-  DataVersion: 27
+  DataVersion: 13
   SettingsFlags:
     Bits0: 0
