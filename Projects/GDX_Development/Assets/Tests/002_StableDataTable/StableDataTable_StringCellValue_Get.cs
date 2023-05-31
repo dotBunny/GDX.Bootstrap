@@ -17,13 +17,13 @@ namespace BVT
         {
             return GDX.Developer.Reports.BuildVerificationReport.Assert(
                 GetIdentifier(),
-                First.Get() == "A1" && Second.Get() == "B2", 
+                First.Get() == "A1" && Second.Get() == "B2",
                 $"Expected A1 ({First.Get()}) and B2 ({Second.Get()})");
         }
 
         public override string GetIdentifier()
         {
-            return "StableTable.StringCellValue.Get";
+            return "StableDataTable.StringCellValue.Get";
         }
     }
 }

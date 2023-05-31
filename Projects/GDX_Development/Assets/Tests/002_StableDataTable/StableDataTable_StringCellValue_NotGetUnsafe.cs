@@ -17,13 +17,13 @@ namespace BVT
         {
             return GDX.Developer.Reports.BuildVerificationReport.Assert(
                 GetIdentifier(),
-                First.GetUnsafe() == null && Second.GetUnsafe() == null, 
+                First.GetUnsafe() == null && Second.GetUnsafe() == null,
                 $"Expected null ({First.GetUnsafe()}) and null ({Second.GetUnsafe()})");
         }
 
         public override string GetIdentifier()
         {
-            return "StableTable.StringCellValue.NotGetUnsafe";
+            return "StableDataTable.StringCellValue.NotGetUnsafe";
         }
     }
 }

@@ -127,6 +127,6 @@ MonoBehaviour:
   - TArray: 
   m_ColumnEntriesFreeListHead: 2
   m_CombinedColumnCount: 2
-  m_DataVersion: 15
+  m_DataVersion: 17
   m_SettingsFlags:
     Bits0: 0
