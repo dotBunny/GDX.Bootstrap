@@ -12,44 +12,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6298f01407a94110b6787a48e881837a, type: 3}
   m_Name: StableDataTable_StringCellValue
   m_EditorClassIdentifier: 
-  DisplayName: GDXStableTable
-  AllStringColumns:
+  m_DisplayName: GDXStableTable
+  m_AllStringColumns:
   - TArray:
     - A1
     - A2
   - TArray:
     - B1
     - B2
-  AllBoolColumns: []
-  AllCharColumns: []
-  AllSbyteColumns: []
-  AllByteColumns: []
-  AllShortColumns: []
-  AllUshortColumns: []
-  AllIntColumns: []
-  AllUintColumns: []
-  AllLongColumns: []
-  AllUlongColumns: []
-  AllFloatColumns: []
-  AllDoubleColumns: []
-  AllVector2Columns: []
-  AllVector3Columns: []
-  AllVector4Columns: []
-  AllVector2IntColumns: []
-  AllVector3IntColumns: []
-  AllQuaternionColumns: []
-  AllRectColumns: []
-  AllRectIntColumns: []
-  AllColorColumns: []
-  AllLayerMaskColumns: []
-  AllBoundsColumns: []
-  AllBoundsIntColumns: []
-  AllHash128Columns: []
-  AllGradientColumns: []
-  AllAnimationCurveColumns: []
-  AllObjectRefColumns: []
-  AllObjectRefTypeNames: []
-  AllColumnNames:
+  m_AllBoolColumns: []
+  m_AllCharColumns: []
+  m_AllSByteColumns: []
+  m_AllByteColumns: []
+  m_AllShortColumns: []
+  m_AllUShortColumns: []
+  m_AllIntColumns: []
+  m_AllUIntColumns: []
+  m_AllLongColumns: []
+  m_AllULongColumns: []
+  m_AllFloatColumns: []
+  m_AllDoubleColumns: []
+  m_AllVector2Columns: []
+  m_AllVector3Columns: []
+  m_AllVector4Columns: []
+  m_AllVector2IntColumns: []
+  m_AllVector3IntColumns: []
+  m_AllQuaternionColumns: []
+  m_AllRectColumns: []
+  m_AllRectIntColumns: []
+  m_AllColorColumns: []
+  m_AllLayerMaskColumns: []
+  m_AllBoundsColumns: []
+  m_AllBoundsIntColumns: []
+  m_AllHash128Columns: []
+  m_AllGradientColumns: []
+  m_AllAnimationCurveColumns: []
+  m_AllObjectRefColumns: []
+  m_AllObjectRefTypeNames: []
+  m_AllColumnNames:
   - TArray:
     - A
     - B
@@ -81,21 +81,21 @@ MonoBehaviour:
   - TArray: []
   - TArray: []
   - TArray: []
-  RowIDToDenseIndexMap: 0000000001000000
-  RowDenseIndexToIDMap: 0000000001000000
-  RowNames:
+  m_RowIdentifierToDenseIndexMap: 0000000001000000
+  m_RowDenseIndexToIDMap: 0000000001000000
+  m_RowNames:
   - 1
   - 2
-  RowEntriesFreeListHead: 2
-  RowCount: 2
-  ColumnIDToDenseIndexMap:
+  m_RowEntriesFreeListHead: 2
+  m_RowCount: 2
+  m_ColumnIdentifierToDenseIndexMap:
   - ColumnType: 0
     ColumnDenseIndex: 0
   - ColumnType: 0
     ColumnDenseIndex: 1
-  ColumnIDToSortOrderMap: 0000000001000000
-  SortedOrderToColumnIDMap: 0000000001000000
-  ColumnDenseIndexToIDMap:
+  m_ColumnIdentifierToSortOrderMap: 0000000001000000
+  m_SortedOrderToColumnIdentifierMap: 0000000001000000
+  m_ColumnDenseIndexToIDMap:
   - TArray: 0000000001000000
   - TArray: 
   - TArray: 
@@ -125,8 +125,8 @@ MonoBehaviour:
   - TArray: 
   - TArray: 
   - TArray: 
-  ColumnEntriesFreeListHead: 2
-  CombinedColumnCount: 2
-  DataVersion: 13
-  SettingsFlags:
+  m_ColumnEntriesFreeListHead: 2
+  m_CombinedColumnCount: 2
+  m_DataVersion: 15
+  m_SettingsFlags:
     Bits0: 0
