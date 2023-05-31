@@ -3,7 +3,7 @@ using GDX;
 using GDX.Editor.Inspectors;
 #if UNITY_2022_2_OR_NEWER
 using GDX.Editor.Windows.Tables;
-using GDX.Tables;
+using GDX.DataTables;
 #endif
 using UnityEditor;
 using UnityEditor.SceneManagement;
@@ -40,7 +40,7 @@ namespace Dev.Editor
 #endif
         public static void CreateStableTableExample()
         {
-            StableTable asset = ScriptableObject.CreateInstance<StableTable>();
+            StableDataTable asset = ScriptableObject.CreateInstance<StableDataTable>();
             AssetDatabase.CreateAsset(asset, "Assets/StableTableExample.asset");
             AssetDatabase.SaveAssets();
 

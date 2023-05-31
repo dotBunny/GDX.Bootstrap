@@ -16,7 +16,7 @@ namespace Dev
             "Assets/GDX.unity",
             "Assets/Tests/000_Config/Config.unity",
             "Assets/Tests/001_SerializableDictionary/SerializableDictionary.unity",
-            "Assets/Tests/002_StableTable/StableTable.unity"
+            "Assets/Tests/002_StableDataTable/StableDataTable.unity"
         };
 
         void Awake()

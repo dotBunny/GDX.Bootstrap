@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6298f01407a94110b6787a48e881837a, type: 3}
-  m_Name: StableTable_StringCellValue
+  m_Name: StableDataTable_StringCellValue
   m_EditorClassIdentifier: 
   DisplayName: GDXStableTable
   AllStringColumns:

@@ -170,11 +170,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   First:
-    Table: {fileID: 11400000, guid: e5c9d8d4f6139ed4eb3c0b5e4c7335a3, type: 2}
+    DataTable: {fileID: 11400000, guid: e5c9d8d4f6139ed4eb3c0b5e4c7335a3, type: 2}
     ColumnIdentifier: 0
     RowIdentifier: 0
   Second:
-    Table: {fileID: 11400000, guid: e5c9d8d4f6139ed4eb3c0b5e4c7335a3, type: 2}
+    DataTable: {fileID: 11400000, guid: e5c9d8d4f6139ed4eb3c0b5e4c7335a3, type: 2}
     ColumnIdentifier: 1
     RowIdentifier: 1
 --- !u!114 &484483606
@@ -190,11 +190,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   First:
-    Table: {fileID: 11400000, guid: e5c9d8d4f6139ed4eb3c0b5e4c7335a3, type: 2}
+    DataTable: {fileID: 11400000, guid: e5c9d8d4f6139ed4eb3c0b5e4c7335a3, type: 2}
     ColumnIdentifier: 0
     RowIdentifier: 1
   Second:
-    Table: {fileID: 11400000, guid: e5c9d8d4f6139ed4eb3c0b5e4c7335a3, type: 2}
+    DataTable: {fileID: 11400000, guid: e5c9d8d4f6139ed4eb3c0b5e4c7335a3, type: 2}
     ColumnIdentifier: 1
     RowIdentifier: 0
 --- !u!114 &484483607
@@ -210,10 +210,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   First:
-    Table: {fileID: 11400000, guid: e5c9d8d4f6139ed4eb3c0b5e4c7335a3, type: 2}
+    DataTable: {fileID: 11400000, guid: e5c9d8d4f6139ed4eb3c0b5e4c7335a3, type: 2}
     ColumnIdentifier: 0
     RowIdentifier: 1
   Second:
-    Table: {fileID: 11400000, guid: e5c9d8d4f6139ed4eb3c0b5e4c7335a3, type: 2}
+    DataTable: {fileID: 11400000, guid: e5c9d8d4f6139ed4eb3c0b5e4c7335a3, type: 2}
     ColumnIdentifier: 1
     RowIdentifier: 0
