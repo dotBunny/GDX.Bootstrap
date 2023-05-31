@@ -2,7 +2,7 @@ using System;
 using GDX;
 using GDX.Editor.Inspectors;
 #if UNITY_2022_2_OR_NEWER
-using GDX.Editor.Windows.Tables;
+using GDX.Editor.Windows.DataTables;
 using GDX.DataTables;
 #endif
 using UnityEditor;
