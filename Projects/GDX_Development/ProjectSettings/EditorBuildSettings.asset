@@ -6,15 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/GDX.unity
+    path: Assets/BVT/Bootstrap.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
-    path: Assets/Tests/000_Config/Config.unity
+    path: Assets/BVT/000_Config/Config.unity
     guid: 70c5efdfa4e643848bb2aa8f0c1f3422
   - enabled: 1
-    path: Assets/Tests/001_SerializableDictionary/SerializableDictionary.unity
+    path: Assets/BVT/001_SerializableDictionary/SerializableDictionary.unity
     guid: ddfcbb4c925a1724785abcec8e7e0668
   - enabled: 1
-    path: Assets/Tests/002_StableDataTable/StableDataTable.unity
+    path: Assets/BVT/002_StableDataTable/StableDataTable.unity
     guid: 4def1be0da45ca547b300cd0bd50c2c8
   m_configObjects: {}

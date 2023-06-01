@@ -4,7 +4,7 @@ using GDX;
 using GDX.Developer.Reports.BuildVerification;
 using UnityEngine;
 
-namespace Dev
+namespace BVT
 {
     public class Bootstrap : MonoBehaviour
     {
@@ -13,10 +13,10 @@ namespace Dev
 
         public static readonly string[] ClassicBuildScenes =
         {
-            "Assets/GDX.unity",
-            "Assets/Tests/000_Config/Config.unity",
-            "Assets/Tests/001_SerializableDictionary/SerializableDictionary.unity",
-            "Assets/Tests/002_StableDataTable/StableDataTable.unity"
+            "Assets/BVT/Bootstrap.unity",
+            "Assets/BVT/000_Config/Config.unity",
+            "Assets/BVT/001_SerializableDictionary/SerializableDictionary.unity",
+            "Assets/BVT/002_StableDataTable/StableDataTable.unity"
         };
 
         void Awake()
