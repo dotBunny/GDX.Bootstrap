@@ -1,4 +1,3 @@
-
 using System;
 using System.IO;
 using UnityEditor;
@@ -65,7 +64,8 @@ namespace Dev.Editor
                 ScriptingImplementation.IL2CPP);
         }
 
-        static void ClassicBuildPlayer(string executableName, BuildTarget buildTarget, BuildTargetGroup buildTargetGroup,
+        static void ClassicBuildPlayer(string executableName, BuildTarget buildTarget,
+            BuildTargetGroup buildTargetGroup,
             ScriptingImplementation scriptingImplementation)
         {
             bool buildFailed = false;
@@ -82,7 +82,7 @@ namespace Dev.Editor
             try
             {
                 // Remove previous build entirely please, we do not want any sort of stale data
-                if(Directory.Exists(BuildLocation))
+                if (Directory.Exists(BuildLocation))
                 {
                     Directory.Delete(BuildLocation, true);
                 }
@@ -95,7 +95,6 @@ namespace Dev.Editor
             {
                 Debug.LogException(ex);
                 buildFailed = true;
-
             }
             finally
             {
@@ -110,8 +109,5 @@ namespace Dev.Editor
                 }
             }
         }
-
-
     }
 }
-
