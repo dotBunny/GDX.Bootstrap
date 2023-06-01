@@ -11,10 +11,10 @@ namespace Dev.Editor
 {
     public static class BuildFactory
     {
-        const string k_WindowsExecutable = "GDX.exe";
-        const string k_MacOSExecutable = "GDX.app";
+        public const string WindowsExecutable = "GDX.exe";
+        public const string k_MacOSExecutable = "GDX.app";
 
-        static readonly string k_BuildLocation = Path.Combine(Application.dataPath, "..", "Builds", "TestBuild");
+        public static readonly string BuildLocation = Path.Combine(Application.dataPath, "..", "Builds", "TestBuild");
 
 #if GDX_TOOLS
         [MenuItem("Tools/GDX/INTERNAL/Build/Classic - Win64 - Mono", false)]
@@ -22,7 +22,7 @@ namespace Dev.Editor
         public static void BuildClassicWin64Mono()
         {
             ClassicBuildPlayer(
-                k_WindowsExecutable,
+                WindowsExecutable,
                 BuildTarget.StandaloneWindows64,
                 BuildTargetGroup.Standalone,
                 ScriptingImplementation.Mono2x);
@@ -34,7 +34,7 @@ namespace Dev.Editor
         public static void BuildClassicWin64IL2CPP()
         {
             ClassicBuildPlayer(
-                k_WindowsExecutable,
+                WindowsExecutable,
                 BuildTarget.StandaloneWindows64,
                 BuildTargetGroup.Standalone,
                 ScriptingImplementation.IL2CPP);
@@ -82,13 +82,13 @@ namespace Dev.Editor
             try
             {
                 // Remove previous build entirely please, we do not want any sort of stale data
-                if(Directory.Exists(k_BuildLocation))
+                if(Directory.Exists(BuildLocation))
                 {
-                    Directory.Delete(k_BuildLocation, true);
+                    Directory.Delete(BuildLocation, true);
                 }
 
                 // Execute classic pipeline
-                BuildPipeline.BuildPlayer(Bootstrap.ClassicBuildScenes, Path.Combine(k_BuildLocation, executableName),
+                BuildPipeline.BuildPlayer(Bootstrap.ClassicBuildScenes, Path.Combine(BuildLocation, executableName),
                     buildTarget, BuildOptions.None);
             }
             catch (Exception ex)

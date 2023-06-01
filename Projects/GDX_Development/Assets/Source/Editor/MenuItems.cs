@@ -1,13 +1,15 @@
-using System;
+using System.Diagnostics;
+using System.IO;
 using GDX;
-using GDX.Editor.Inspectors;
+using GDX.Editor;
+using UnityEditor;
+using UnityEditor.SceneManagement;
+using UnityEngine;
+using Debug = UnityEngine.Debug;
 #if UNITY_2022_2_OR_NEWER
 using GDX.Editor.Windows.DataTables;
 using GDX.DataTables;
 #endif
-using UnityEditor;
-using UnityEditor.SceneManagement;
-using UnityEngine;
 
 namespace Dev.Editor
 {
@@ -18,20 +20,73 @@ namespace Dev.Editor
 #endif
         public static void TestOutput()
         {
-            GDX.Editor.Automation.CaptureFocusedEditorWindowToPNG(System.IO.Path.Combine(GDX.Platform.GetOutputFolder("GDX_Automation"), "test.png"));
+            Automation.CaptureFocusedEditorWindowToPNG(Path.Combine(Platform.GetOutputFolder("GDX_Automation"),
+                "test.png"));
         }
 
 #if GDX_TOOLS
-        [MenuItem("Tools/GDX/INTERNAL/Run BVT In Editor", false)]
+        [MenuItem("Tools/GDX/INTERNAL/BVT/Editor", false)]
 #endif
-        public static void RunBuildVerificationTest()
+        public static void RunBuildVerificationTestInEditor()
         {
             if (Application.isPlaying)
             {
                 EditorApplication.ExitPlaymode();
             }
+
             EditorSceneManager.OpenScene("Assets/GDX.unity", OpenSceneMode.Single);
             EditorApplication.EnterPlaymode();
+        }
+
+#if GDX_TOOLS
+        [MenuItem("Tools/GDX/INTERNAL/BVT/Win64 - Mono", false)]
+#endif
+        public static void RunBuildVerificationTestInWin64Mono()
+        {
+            BuildFactory.BuildClassicWin64Mono();
+            EvaluateBuild(Path.Combine(BuildFactory.BuildLocation, BuildFactory.WindowsExecutable));
+        }
+
+
+#if GDX_TOOLS
+        [MenuItem("Tools/GDX/INTERNAL/BVT/Win64 - IL2CPP", false)]
+#endif
+        public static void RunBuildVerificationTestInWin64IL2CPP()
+        {
+            BuildFactory.BuildClassicWin64IL2CPP();
+            EvaluateBuild(Path.Combine(BuildFactory.BuildLocation, BuildFactory.WindowsExecutable));
+        }
+
+        static void EvaluateBuild(string buildPath)
+        {
+            if (File.Exists(buildPath))
+            {
+                // Get tmp folder
+                string outputFolder = Path.Combine(Path.GetTempPath(), "gdx-dev-bvt");
+                string outputFile = Path.Combine(outputFolder, "BVT.xml");
+                Platform.EnsureFileFolderHierarchyExists(outputFolder);
+                Platform.ForceDeleteFile(outputFile);
+
+                Process buildProcess = Process.Start(buildPath, $"--GDX_OUTPUT_FOLDER=\"{outputFolder}\"");
+                buildProcess?.WaitForExit(10000);
+
+                if (File.Exists(outputFile))
+                {
+                    string content = File.ReadAllText(outputFile);
+                    if (content.Contains("Failed"))
+                    {
+                        Debug.LogError($"BVT had FAILURES\nResults:\n{content}");
+                    }
+                    else
+                    {
+                        Debug.Log($"BVT was successful.\nResults:\n{content}");
+                    }
+                }
+                else
+                {
+                    Debug.LogError("BVT did not finish.");
+                }
+            }
         }
 
 #if UNITY_2022_2_OR_NEWER
@@ -111,4 +166,3 @@ namespace Dev.Editor
 #endif
     }
 }
-
