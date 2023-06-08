@@ -41,8 +41,8 @@ MonoBehaviour:
   - TArray:
     - 25
     - 22
-    - 21
-    - 20.5
+    - 20
+    - 20
     - 20
   - TArray:
     - 10
@@ -164,6 +164,6 @@ MonoBehaviour:
   - TArray: 
   m_ColumnEntriesFreeListHead: 5
   m_CombinedColumnCount: 5
-  m_DataVersion: 302
+  m_DataVersion: 305
   m_SettingsFlags:
     Bits0: 0
