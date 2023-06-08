@@ -1,0 +1,169 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6298f01407a94110b6787a48e881837a, type: 3}
+  m_Name: Characters
+  m_EditorClassIdentifier: 
+  m_DisplayName: Characters
+  m_AllStringColumns:
+  - TArray:
+    - Ace
+    - Too cool for school.
+    - Class.
+    - Don't fight her.
+    - That evil genius!
+  - TArray:
+    - Cleaveland Brown
+    - Peter Griffon
+    - Louis Griffon
+    - Meg Griffon
+    - Brian Griffon
+  m_AllBoolColumns:
+  - TArray: 0001000000
+  m_AllCharColumns: []
+  m_AllSByteColumns: []
+  m_AllByteColumns: []
+  m_AllShortColumns: []
+  m_AllUShortColumns: []
+  m_AllIntColumns: []
+  m_AllUIntColumns: []
+  m_AllLongColumns: []
+  m_AllULongColumns: []
+  m_AllFloatColumns:
+  - TArray:
+    - 25
+    - 22
+    - 21
+    - 20.5
+    - 20
+  - TArray:
+    - 10
+    - 10
+    - 10
+    - 10
+    - 10
+  m_AllDoubleColumns: []
+  m_AllVector2Columns: []
+  m_AllVector3Columns: []
+  m_AllVector4Columns: []
+  m_AllVector2IntColumns: []
+  m_AllVector3IntColumns: []
+  m_AllQuaternionColumns: []
+  m_AllRectColumns: []
+  m_AllRectIntColumns: []
+  m_AllColorColumns: []
+  m_AllLayerMaskColumns: []
+  m_AllBoundsColumns: []
+  m_AllBoundsIntColumns: []
+  m_AllHash128Columns: []
+  m_AllGradientColumns: []
+  m_AllAnimationCurveColumns: []
+  m_AllObjectRefColumns: []
+  m_AllObjectRefTypeNames: []
+  m_AllColumnNames:
+  - TArray:
+    - Tooltip
+    - DisplayName
+  - TArray: []
+  - TArray:
+    - Special
+  - TArray: []
+  - TArray: []
+  - TArray: []
+  - TArray: []
+  - TArray: []
+  - TArray: []
+  - TArray: []
+  - TArray: []
+  - TArray:
+    - Health
+    - Damage
+  - TArray: []
+  - TArray: []
+  - TArray: []
+  - TArray: []
+  - TArray: []
+  - TArray: []
+  - TArray: []
+  - TArray: []
+  - TArray: []
+  - TArray: []
+  - TArray: []
+  - TArray: []
+  - TArray: []
+  - TArray: []
+  - TArray: []
+  - TArray: []
+  - TArray: []
+  m_RowIdentifierToDenseIndexMap: 04000000030000000200000001000000090000000a000000050000000600000000000000070000000b0000000c0000000d0000000e0000000f00000010000000
+  m_RowDenseIndexToIDMap: 0800000003000000020000000100000000000000
+  m_RowNames:
+  - Cleaveland
+  - Peter
+  - Louis
+  - Meg
+  - Brian
+  m_RowEntriesFreeListHead: 4
+  m_RowCount: 5
+  m_ColumnIdentifierToDenseIndexMap:
+  - ColumnType: 11
+    ColumnDenseIndex: 0
+  - ColumnType: 0
+    ColumnDenseIndex: 0
+  - ColumnType: 2
+    ColumnDenseIndex: 0
+  - ColumnType: 0
+    ColumnDenseIndex: 1
+  - ColumnType: 11
+    ColumnDenseIndex: 1
+  - ColumnType: -1
+    ColumnDenseIndex: 6
+  - ColumnType: -1
+    ColumnDenseIndex: 7
+  - ColumnType: -1
+    ColumnDenseIndex: 8
+  m_ColumnIdentifierToSortOrderMap: 0100000002000000040000000000000003000000ffffffffffffffffffffffff
+  m_SortedOrderToColumnIdentifierMap: 0300000000000000010000000400000002000000
+  m_ColumnDenseIndexToIDMap:
+  - TArray: 0100000003000000
+  - TArray: 
+  - TArray: 02000000
+  - TArray: 
+  - TArray: 
+  - TArray: 
+  - TArray: 
+  - TArray: 
+  - TArray: 
+  - TArray: 
+  - TArray: 
+  - TArray: 0000000004000000
+  - TArray: 
+  - TArray: 
+  - TArray: 
+  - TArray: 
+  - TArray: 
+  - TArray: 
+  - TArray: 
+  - TArray: 
+  - TArray: 
+  - TArray: 
+  - TArray: 
+  - TArray: 
+  - TArray: 
+  - TArray: 
+  - TArray: 
+  - TArray: 
+  - TArray: 
+  m_ColumnEntriesFreeListHead: 5
+  m_CombinedColumnCount: 5
+  m_DataVersion: 302
+  m_SettingsFlags:
+    Bits0: 0
