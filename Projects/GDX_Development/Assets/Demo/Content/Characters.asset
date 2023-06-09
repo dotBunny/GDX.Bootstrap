@@ -66,8 +66,16 @@ MonoBehaviour:
   m_AllHash128Columns: []
   m_AllGradientColumns: []
   m_AllAnimationCurveColumns: []
-  m_AllObjectRefColumns: []
-  m_AllObjectRefTypeNames: []
+  m_AllObjectRefColumns:
+  - TArray:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 10429258453404945, guid: 99e6f8ff568fe1941b05faf55c239adc, type: 3}
+  m_AllObjectRefTypeNames:
+  - UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
   m_AllColumnNames:
   - TArray:
     - Tooltip
@@ -102,7 +110,8 @@ MonoBehaviour:
   - TArray: []
   - TArray: []
   - TArray: []
-  - TArray: []
+  - TArray:
+    - Prefab
   m_RowIdentifierToDenseIndexMap: 04000000030000000200000001000000090000000a000000050000000600000000000000070000000b0000000c0000000d0000000e0000000f00000010000000
   m_RowDenseIndexToIDMap: 0800000003000000020000000100000000000000
   m_RowNames:
@@ -124,14 +133,14 @@ MonoBehaviour:
     ColumnDenseIndex: 1
   - ColumnType: 11
     ColumnDenseIndex: 1
-  - ColumnType: -1
-    ColumnDenseIndex: 6
+  - ColumnType: 28
+    ColumnDenseIndex: 0
   - ColumnType: -1
     ColumnDenseIndex: 7
   - ColumnType: -1
     ColumnDenseIndex: 8
-  m_ColumnIdentifierToSortOrderMap: 0100000002000000040000000000000003000000ffffffffffffffffffffffff
-  m_SortedOrderToColumnIdentifierMap: 0300000000000000010000000400000002000000
+  m_ColumnIdentifierToSortOrderMap: 010000000200000004000000000000000300000005000000ffffffffffffffff
+  m_SortedOrderToColumnIdentifierMap: 030000000000000001000000040000000200000005000000
   m_ColumnDenseIndexToIDMap:
   - TArray: 0100000003000000
   - TArray: 
@@ -161,9 +170,9 @@ MonoBehaviour:
   - TArray: 
   - TArray: 
   - TArray: 
-  - TArray: 
-  m_ColumnEntriesFreeListHead: 5
-  m_CombinedColumnCount: 5
-  m_DataVersion: 305
+  - TArray: 05000000
+  m_ColumnEntriesFreeListHead: 6
+  m_CombinedColumnCount: 6
+  m_DataVersion: 307
   m_SettingsFlags:
     Bits0: 0
