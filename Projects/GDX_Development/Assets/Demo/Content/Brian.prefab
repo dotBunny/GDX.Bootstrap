@@ -13,6 +13,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: d08499c72199288468f27329dfed53e1, type: 2}
     - target: {fileID: 2326392902570779367, guid: 3b0e78844502c174d81802a98d7db717, type: 3}
+      propertyPath: Type.DataTable
+      value: 
+      objectReference: {fileID: 11400000, guid: e41a2ec701e63944197fc5c3f52e318d, type: 2}
+    - target: {fileID: 2326392902570779367, guid: 3b0e78844502c174d81802a98d7db717, type: 3}
       propertyPath: Damage.DataTable
       value: 
       objectReference: {fileID: 11400000, guid: d08499c72199288468f27329dfed53e1, type: 2}
@@ -25,6 +29,10 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2326392902570779367, guid: 3b0e78844502c174d81802a98d7db717, type: 3}
+      propertyPath: Type.RowIdentifier
+      value: 29
+      objectReference: {fileID: 0}
+    - target: {fileID: 2326392902570779367, guid: 3b0e78844502c174d81802a98d7db717, type: 3}
       propertyPath: Damage.RowIdentifier
       value: 3
       objectReference: {fileID: 0}
@@ -35,6 +43,10 @@ PrefabInstance:
     - target: {fileID: 2326392902570779367, guid: 3b0e78844502c174d81802a98d7db717, type: 3}
       propertyPath: Name.ColumnIdentifier
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2326392902570779367, guid: 3b0e78844502c174d81802a98d7db717, type: 3}
+      propertyPath: Type.ColumnIdentifier
+      value: 29
       objectReference: {fileID: 0}
     - target: {fileID: 2326392902570779367, guid: 3b0e78844502c174d81802a98d7db717, type: 3}
       propertyPath: Damage.ColumnIdentifier

@@ -73,9 +73,11 @@ MonoBehaviour:
     - {fileID: 0}
     - {fileID: 0}
     - {fileID: 10429258453404945, guid: 99e6f8ff568fe1941b05faf55c239adc, type: 3}
+  m_AllEnumIntColumns: []
   m_AllObjectRefTypeNames:
   - UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
+  m_AllEnumIntTypeNames: []
   m_AllColumnNames:
   - TArray:
     - Tooltip
@@ -112,6 +114,7 @@ MonoBehaviour:
   - TArray: []
   - TArray:
     - Prefab
+  - TArray: []
   m_RowIdentifierToDenseIndexMap: 04000000030000000200000001000000090000000a000000050000000600000000000000070000000b0000000c0000000d0000000e0000000f00000010000000
   m_RowDenseIndexToIDMap: 0800000003000000020000000100000000000000
   m_RowNames:
@@ -171,8 +174,10 @@ MonoBehaviour:
   - TArray: 
   - TArray: 
   - TArray: 05000000
+  - TArray: 
   m_ColumnEntriesFreeListHead: 6
   m_CombinedColumnCount: 6
   m_DataVersion: 307
   m_SettingsFlags:
     Bits0: 0
+  m_StructureVersion: 1
