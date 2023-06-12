@@ -8,6 +8,7 @@ namespace Demo
         public StringCellValue Name;
         public FloatCellValue Health;
         public FloatCellValue Damage;
+        public EnumIntCellValue Type;
     }
 }
 
