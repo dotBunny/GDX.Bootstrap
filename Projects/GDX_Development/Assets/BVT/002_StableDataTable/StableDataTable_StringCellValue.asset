@@ -48,7 +48,9 @@ MonoBehaviour:
   m_AllGradientColumns: []
   m_AllAnimationCurveColumns: []
   m_AllObjectRefColumns: []
+  m_AllEnumIntColumns: []
   m_AllObjectRefTypeNames: []
+  m_AllEnumIntTypeNames: []
   m_AllColumnNames:
   - TArray:
     - A
@@ -130,3 +132,4 @@ MonoBehaviour:
   m_DataVersion: 17
   m_SettingsFlags:
     Bits0: 0
+  m_StructureVersion: 1

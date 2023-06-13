@@ -56,3 +56,7 @@ MonoBehaviour:
     DataTable: {fileID: 0}
     ColumnIdentifier: 0
     RowIdentifier: 0
+  Type:
+    DataTable: {fileID: 0}
+    ColumnIdentifier: 0
+    RowIdentifier: 0
