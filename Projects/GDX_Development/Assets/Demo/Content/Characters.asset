@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6298f01407a94110b6787a48e881837a, type: 3}
   m_Name: Characters
   m_EditorClassIdentifier: 
-  m_DisplayName: Characters
+  metaData: {fileID: 8207452008734836074}
   m_AllStringColumns:
   - TArray:
     - Ace
@@ -178,6 +178,20 @@ MonoBehaviour:
   m_ColumnEntriesFreeListHead: 6
   m_CombinedColumnCount: 6
   m_DataVersion: 307
-  m_SettingsFlags:
-    Bits0: 0
   m_StructureVersion: 1
+--- !u!114 &8207452008734836074
+MonoBehaviour:
+  m_ObjectHideFlags: 27
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5fa64f58c594ba4e823cf3c3da911b3, type: 3}
+  m_Name: DataTableMetaData_EditorOnly
+  m_EditorClassIdentifier: 
+  DisplayName: Characters
+  SourcePath: 
+  ReferencesOnlyMode: 0
+  AllowUndo: 0
