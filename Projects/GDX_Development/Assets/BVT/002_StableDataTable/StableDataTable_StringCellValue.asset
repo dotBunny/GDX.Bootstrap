@@ -1,5 +1,22 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-6831659541160047726
+MonoBehaviour:
+  m_ObjectHideFlags: 27
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5fa64f58c594ba4e823cf3c3da911b3, type: 3}
+  m_Name: DataTableMetaData_EditorOnly
+  m_EditorClassIdentifier: 
+  BindingUri: 
+  BindingDataVersion: 0
+  DisplayName: GDX DataTable
+  ReferencesOnlyMode: 0
+  SupportsUndo: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12,7 +29,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6298f01407a94110b6787a48e881837a, type: 3}
   m_Name: StableDataTable_StringCellValue
   m_EditorClassIdentifier: 
-  m_DisplayName: GDXStableTable
+  m_MetaData: {fileID: -6831659541160047726}
   m_AllStringColumns:
   - TArray:
     - A1
@@ -130,6 +147,4 @@ MonoBehaviour:
   m_ColumnEntriesFreeListHead: 2
   m_CombinedColumnCount: 2
   m_DataVersion: 17
-  m_SettingsFlags:
-    Bits0: 0
   m_StructureVersion: 1
