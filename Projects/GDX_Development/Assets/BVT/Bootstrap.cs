@@ -2,12 +2,14 @@ using System;
 using System.IO;
 using GDX;
 using GDX.Developer.Reports.BuildVerification;
+using GDX.Experimental;
 using UnityEngine;
 
 namespace BVT
 {
     public class Bootstrap : MonoBehaviour
     {
+        public const int LogCategory = 42;
         float m_runtimeSettleTimer = 5f;
         bool m_executing;
 
@@ -21,7 +23,8 @@ namespace BVT
 
         void Awake()
         {
-            Debug.Log($"[BOOTSTRAP] Tests will begin in ~{m_runtimeSettleTimer.ToString()} seconds.");
+            ManagedLog.RegisterCategory(LogCategory, "Bootstrap");
+            ManagedLog.Info($"Tests will begin in ~{m_runtimeSettleTimer.ToString()} seconds.", LogCategory);
         }
 
 #pragma warning disable IDE0051
@@ -37,7 +40,7 @@ namespace BVT
 
             if (!m_executing)
             {
-                Debug.Log($"[BOOTSTRAP] Start Async Execution ...");
+                ManagedLog.Info("Start Async Execution ...", LogCategory);
                 m_executing = true;
                 Execute();
             }
@@ -49,7 +52,7 @@ namespace BVT
 
             int testCount = ClassicBuildScenes.Length;
 #if !UNITY_EDITOR
-            Debug.Log($"[BOOTSTRAP] Starting test ({testCount.ToString()}) run  ...");
+            ManagedLog.Info($"Starting test ({testCount.ToString()}) run ...", LogCategory);
 #endif
             try
             {
@@ -76,11 +79,11 @@ namespace BVT
                 string result = GDX.Developer.Reports.BuildVerificationReport.OutputReport(outputPath);
                 if (File.Exists(outputPath))
                 {
-                    Debug.Log($"[BOOTSTRAP] Build checks ({result}) written to {outputPath}.");
+                    ManagedLog.Info($"Build checks ({result}) written to {outputPath}.", LogCategory);
                 }
                 else
                 {
-                    Debug.LogError($"[BOOTSTRAP] Unable to write file to {outputPath}.");
+                    ManagedLog.Info($"Unable to write file to {outputPath}.", LogCategory);
                 }
 
 #if UNITY_EDITOR
