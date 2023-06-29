@@ -3,6 +3,7 @@ using System.IO;
 using GDX;
 using GDX.Developer.Reports.BuildVerification;
 using GDX.Experimental;
+using GDX.Experimental.Logging;
 using UnityEngine;
 
 namespace BVT
@@ -24,7 +25,7 @@ namespace BVT
         void Awake()
         {
             ManagedLog.RegisterCategory(LogCategory, "Bootstrap");
-            ManagedLog.Info($"Tests will begin in ~{m_runtimeSettleTimer.ToString()} seconds.", LogCategory);
+            ManagedLog.Info(LogCategory, $"Tests will begin in ~{m_runtimeSettleTimer.ToString()} seconds.");
         }
 
 #pragma warning disable IDE0051
@@ -40,7 +41,7 @@ namespace BVT
 
             if (!m_executing)
             {
-                ManagedLog.Info("Start Async Execution ...", LogCategory);
+                ManagedLog.Info(LogCategory, "Start Async Execution ...");
                 m_executing = true;
                 Execute();
             }
@@ -79,11 +80,11 @@ namespace BVT
                 string result = GDX.Developer.Reports.BuildVerificationReport.OutputReport(outputPath);
                 if (File.Exists(outputPath))
                 {
-                    ManagedLog.Info($"Build checks ({result}) written to {outputPath}.", LogCategory);
+                    ManagedLog.Info(LogCategory, $"Build checks ({result}) written to {outputPath}.");
                 }
                 else
                 {
-                    ManagedLog.Info($"Unable to write file to {outputPath}.", LogCategory);
+                    ManagedLog.Info(LogCategory, $"Unable to write file to {outputPath}.");
                 }
 
 #if UNITY_EDITOR
