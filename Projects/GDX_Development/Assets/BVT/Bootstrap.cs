@@ -2,8 +2,7 @@ using System;
 using System.IO;
 using GDX;
 using GDX.Developer.Reports.BuildVerification;
-using GDX.Experimental;
-using GDX.Experimental.Logging;
+using GDX.Logging;
 using UnityEngine;
 
 namespace BVT
