@@ -50,7 +50,7 @@ namespace BVT
 
             int testCount = ClassicBuildScenes.Length;
 #if !UNITY_EDITOR
-            ManagedLog.Info(LogCategory, $"Starting test ({testCount.ToString()}) run ...");
+            UnityEngine.Debug.Log($"Starting test ({testCount.ToString()}) run ...");
 #endif
             try
             {
