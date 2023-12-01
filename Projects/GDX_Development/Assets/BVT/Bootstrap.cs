@@ -1,15 +1,14 @@
 using System;
+using System.Diagnostics;
 using System.IO;
 using GDX;
 using GDX.Developer.Reports.BuildVerification;
-using GDX.Logging;
 using UnityEngine;
 
 namespace BVT
 {
     public class Bootstrap : MonoBehaviour
     {
-        public const int LogCategory = 42;
         float m_runtimeSettleTimer = 5f;
         bool m_executing;
 
@@ -23,8 +22,7 @@ namespace BVT
 
         void Awake()
         {
-            ManagedLog.RegisterCategory(LogCategory, "Bootstrap");
-            ManagedLog.Info(LogCategory, $"Tests will begin in ~{m_runtimeSettleTimer.ToString()} seconds.");
+            UnityEngine.Debug.Log($"Tests will begin in ~{m_runtimeSettleTimer.ToString()} seconds.");
         }
 
 #pragma warning disable IDE0051
@@ -40,7 +38,7 @@ namespace BVT
 
             if (!m_executing)
             {
-                ManagedLog.Info(LogCategory, "Start Async Execution ...");
+                UnityEngine.Debug.Log("Start Async Execution ...");
                 m_executing = true;
                 Execute();
             }
@@ -79,11 +77,11 @@ namespace BVT
                 string result = GDX.Developer.Reports.BuildVerificationReport.OutputReport(outputPath);
                 if (File.Exists(outputPath))
                 {
-                    ManagedLog.Info(LogCategory, $"Build checks ({result}) written to {outputPath}.");
+                    UnityEngine.Debug.Log($"Build checks ({result}) written to {outputPath}.");
                 }
                 else
                 {
-                    ManagedLog.Info(LogCategory, $"Unable to write file to {outputPath}.");
+                    UnityEngine.Debug.Log($"Unable to write file to {outputPath}.");
                 }
 
 #if UNITY_EDITOR
